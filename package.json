@@ -1,0 +1,10 @@
+{
+  "name": "campaner-sas",
+  "version": "0.0.1",
+  "description": "Conseils en amélioration et embellissement de l'habitat.",
+  "devDependencies": {
+    "gulp": "~3.8.9",
+    "connect": "~3.3.2",
+    "serve-static": "~1.7.1"
+  }
+}

@@ -1,0 +1,172 @@
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.app__pull-left {
+  float: left;
+}
+
+.app__pull-right {
+  float: right;
+}
+
+.app__text-left {
+  width: 100%;
+  text-align: left;
+}
+
+.app__text-center {
+  width: 100%;
+  text-align: center;
+}
+
+.app__text-right {
+  width: 100%;
+  text-align: right;
+}
+
+.app__clickable {
+  cursor: pointer;
+}
+
+.app__button--small {
+  height: 24px;
+  font-size: 12px;
+  padding: 0 4px;
+  line-height: 26px;
+}
+
+.app-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.app-mobile__title {
+  display: none !important;
+}
+
+.app-header {
+  overflow: visible;
+  background-color: white;
+}
+
+.app-header__row {
+  padding: 0 40px 0 60px;
+}
+
+.app-header .material-icons {
+  color: #767777 !important;
+}
+
+.app-header .mdl-layout__drawer-button {
+  background: transparent;
+  color: #767777;
+}
+
+.app-header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.app-navigation {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 800px;
+}
+
+.app-navigation__container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  direction: rtl;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+.app-navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid #8bc34a;
+}
+ 
+.app-drawer {
+  border-right: none;
+  background-color: #fff;
+}
+
+.app-drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+  text-align: center;
+}
+
+.app-drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: #8bc34a;
+}
+
+.app-drawer .mdl-navigation__link .material-icons {
+    font-size: 24px;
+    margin-right: 32px;
+}
+
+.app-drawer .mdl-layout-title {
+  position: relative;
+  background-color: #fff;
+  height: 160px;
+  line-height: inherit;
+  padding-left: 0;
+  padding: 10px 0;
+}
+
+.app-logo__image {
+  width: 240px;
+}
+
+.app-drawer .app-logo__image {
+  position: absolute;
+}
+
+.app-content {
+  max-width: 1080px;
+}
+
+.app-grid {
+  max-width: 760px;
+}

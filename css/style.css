@@ -128,13 +128,25 @@ a {
  
 .app-drawer {
   border-right: none;
+  background: url('/img/bg-drawer.png');
+}
+
+.app-drawer .mdl-navigation {
   background-color: #fff;
+  padding-top: 0;
+  padding-bottom: 5px;
 }
 
 .app-drawer .mdl-navigation__link.mdl-navigation__link {
   font-size: 14px;
-  color: #757575;
+  color: #fff;
   text-align: center;
+  margin: 5px 10px;
+  background-color: #603814;
+}
+
+.app-drawer .mdl-navigation__link.mdl-navigation__link:hover {
+  color: inherit;
 }
 
 .app-drawer span.mdl-navigation__link.mdl-navigation__link {
@@ -153,10 +165,6 @@ a {
   line-height: inherit;
   padding-left: 0;
   padding: 10px 0;
-}
-
-.app-logo__image {
-  width: 240px;
 }
 
 .app-drawer .app-logo__image {

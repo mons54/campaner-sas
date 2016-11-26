@@ -1,6 +1,7 @@
 body {
   width: 100%;
   min-height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* Disable ugly boxes around images in IE10 */
@@ -20,6 +21,24 @@ a {
 ::selection {
   background-color: #6ab344;
   color: #fff;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  width: 100%;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+ul, ol, p {
+  font-size: 15px;
 }
 
 .app__pull-left {
@@ -94,6 +113,13 @@ a {
   font-size: 14px;
 }
 
+.app-header__row .app-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 .app-navigation {
   /* ... and now make sure the content is actually LTR */
   direction: ltr;
@@ -138,11 +164,15 @@ a {
 }
 
 .app-drawer .mdl-navigation__link.mdl-navigation__link {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #fff;
   text-align: center;
   margin: 5px 10px;
+  padding: 10px 15px;
   background-color: #603814;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .app-drawer .mdl-navigation__link.mdl-navigation__link:hover {
@@ -177,4 +207,58 @@ a {
 
 .app-grid {
   max-width: 760px;
+}
+
+.app-home__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.app-home__team-image {
+  width: 100%;
+}
+
+@media (min-width: 480px) and (max-width:839px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  ul, ol, p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 840px) {
+  
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  ul, ol, p {
+    font-size: 20px;
+  }
+
+  .mdl-grid {
+      padding: 8px 20px
+  }
+
+  .app-home__presentation {
+    float: left;
+    width: 59%;
+    margin-right: 2%;
+  }
+
+  .app-home__team {
+    float: right;
+    width: 39%;
+  }
 }

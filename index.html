@@ -13,7 +13,7 @@
         <link href="css/material/material.min.css" rel="stylesheet">
         <link href="css/material/icon.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link ng-if="user.lang == 'ar'" ng-href="css/style.ar.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans+Condensed:300|PT+Sans" rel="stylesheet">
     </head>
 
     <body>
@@ -23,23 +23,6 @@
                     <span class="app-title mdl-layout-title">
                         {{ title }}
                     </span>
-                    <div class="mdl-layout-spacer"></div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-                            <i class="material-icons">search</i>
-                        </label>
-                        <div class="mdl-textfield__expandable-holder">
-                            <input class="mdl-textfield__input" type="text" id="search">
-                            <label class="mdl-textfield__label" for="search">...</label>
-                        </div>
-                    </div>
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-                        <i class="material-icons">more_vert</i>
-                    </button>
-                    <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-                        <a href="/contact" class="mdl-menu__item">Contact</a>
-                        <li href="/legal" class="mdl-menu__item">Informations</li>
-                    </ul>
                 </div>
             </header>
 
@@ -50,13 +33,22 @@
                 </span>
                 <nav class="mdl-navigation" ng-hide="user.gid">
                     <a class="mdl-navigation__link" href="/isolation">
-                        Isolation
+                        Isolation de combles perdus et aménagés
                     </a>
                     <a class="mdl-navigation__link" href="/assainissement">
-                        Assainissement
+                        Assainissement et ventilation
                     </a>
                     <a class="mdl-navigation__link" href="/demoussage">
-                        Démoussage
+                        Démoussage et hydrofugation de toiture
+                    </a>
+                    <a class="mdl-navigation__link" href="/facades">
+                        Façades
+                    </a>
+                    <a class="mdl-navigation__link" href="/contact">
+                        Contact
+                    </a>
+                    <a class="mdl-navigation__link" href="/bilan">
+                        Demande d'étude et de bilan gratuits
                     </a>
                 </nav>
             </div>

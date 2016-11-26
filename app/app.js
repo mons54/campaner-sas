@@ -46,7 +46,7 @@
         function ($routeProvider, $locationProvider) {
             $routeProvider
             .when('/', {
-                title : "Acceuil",
+                title : "Accueil",
                 description: "Conseils en amélioration et embellissement de l'habitat.",
                 templateUrl: '/app/home/templates/home.html',
                 controller: 'homeCtrl'

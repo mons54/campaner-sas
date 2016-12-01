@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('components').
+angular.module('app').
 
 /**
  * @ngdoc service

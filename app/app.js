@@ -10,18 +10,9 @@
      * @description
      * The module of app.
      * @requires ngRoute
-     * @requires easypiechart
-     * @requires pascalprecht.translate
-     * @requires components
-     * @requires game
-     * @requires home
-     * @requires ranking
-     * @requires trophies
      */
     module('app', [
-        'ngRoute',
-        'components',
-        'home'
+        'ngRoute'
     ]).
 
     run(['$rootScope', '$route',
@@ -48,26 +39,38 @@
             .when('/', {
                 title : "Accueil",
                 description: "Conseils en amélioration et embellissement de l'habitat.",
-                templateUrl: '/app/home/templates/home.html',
+                templateUrl: '/app/home/home.html',
                 controller: 'homeCtrl'
             })
             .when('/isolation', {
                 title : "Isolation",
                 description: "Conseils en amélioration et embellissement de l'habitat.",
-                templateUrl: '/app/isolation/templates/isolation.html',
-                controller: 'isolationCtrl'
+                templateUrl: '/app/isolation/isolation.html'
             })
             .when('/assainissement', {
                 title : "Assainissement",
                 description: "Conseils en amélioration et embellissement de l'habitat.",
-                templateUrl: '/app/assainissement/templates/assainissement.html',
-                controller: 'assainissementCtrl'
+                templateUrl: '/app/assainissement/assainissement.html'
             })
             .when('/demoussage', {
                 title : "Démoussage",
                 description: "Conseils en amélioration et embellissement de l'habitat.",
-                templateUrl: '/app/demoussage/templates/demoussage.html',
-                controller: 'demoussageCtrl'
+                templateUrl: '/app/demoussage/demoussage.html'
+            })
+            .when('/facades', {
+                title : "Facades",
+                description: "Conseils en amélioration et embellissement de l'habitat.",
+                templateUrl: '/app/facades/facades.html'
+            })
+            .when('/contact', {
+                title : "Contact",
+                description: "Conseils en amélioration et embellissement de l'habitat.",
+                templateUrl: '/app/contact/contact.html'
+            })
+            .when('/bilan', {
+                title : "bilan",
+                description: "Conseils en amélioration et embellissement de l'habitat.",
+                templateUrl: '/app/bilan/bilan.html'
             })
             .otherwise({
                 redirectTo: '/'

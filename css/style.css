@@ -52,6 +52,10 @@ p {
   width: 100%;
 }
 
+ul, ol {
+  padding-left: 20px;
+}
+
 .app__pull-left {
   float: left;
 }
@@ -220,19 +224,18 @@ p {
   max-width: 760px;
 }
 
-.app-home__title {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.app-home__team-image {
+.app-home__team img {
   width: 100%;
 }
 
 .app-partner {
   display: table;
   width: 100%;
+  margin-bottom: 25px;
+}
+
+.app-partner--no-marging {
+  margin-bottom: 0;
 }
 
 .app-partner__logo {
@@ -241,6 +244,16 @@ p {
 
 .app-partner__logo--igloo {
   width: 150px;
+}
+
+.app-partner__logo--technichem {
+  width: 250px;
+  margin-top: 10px;
+}
+
+.app-partner__logo--eole {
+  width: 150px;
+  margin: 10px 0;
 }
 
 .app-partner__content {
@@ -255,8 +268,8 @@ p {
   text-align: right;
 }
 
-.app-thumbnail {
-  margin-top: 25px;
+.app-partner__content--center {
+  text-align: center;
 }
 
 .app-thumbnail__content {
@@ -272,14 +285,6 @@ p {
 @media (min-width: 480px) {
   .app-thumbnail {
     margin-top: 0;
-  }
-
-  .app-thumbnail__content--left {
-    text-align: left;
-  }
-
-  .app-thumbnail__content--right {
-    text-align: right;
   }
 }
 
@@ -301,10 +306,22 @@ p {
     font-size: 18px;
   }
 
+  .app-home__team {
+    max-height: 300px;
+  }
+
   .app-partner__content {
     display: table-cell;
     width: 50%;
     text-align: center;
+  }
+
+  .app-partner__logo--technichem {
+    width: 500px;
+  }
+
+  .app-partner__logo--eole {
+    width: 300px;
   }
 
   .app-thumbnail__content {
@@ -322,7 +339,11 @@ p {
   }
 
   .app-thumbnail__image {
-    height: 225px;
+    height: 200px;
+  }
+
+  .app-thumbnail__image--assainissement-1 {
+    height: 400px;
   }
 }
 
@@ -344,19 +365,21 @@ p {
     font-size: 20px;
   }
 
+  ul, ol {
+    padding-left: 30px;
+  }
+
   .mdl-grid {
       padding: 8px 20px
   }
 
-  .app-home__presentation {
-    float: left;
-    width: 59%;
-    margin-right: 2%;
+  .app-home__team {
+    text-align: center;
+    padding: 0 10px 0 20px;
   }
 
-  .app-home__team {
-    float: right;
-    width: 39%;
+  .app-partner {
+    margin-bottom: 0;
   }
 
   .app-partner__logo {
@@ -367,9 +390,17 @@ p {
     width: 200px;
   }
 
+  .app-partner__logo--technichem {
+    width: 500px;
+  }
+
+  .app-partner__logo--eole {
+    margin-top: 50px;
+    width: 300px;
+  }
+
   .app-thumbnail {
     padding-left: 25px;
-    margin-top: 0;
   }
 
   .app-thumbnail--left {
@@ -384,8 +415,20 @@ p {
     margin-bottom: 50px;
   }
 
+  .app-thumbnail__content--left {
+    text-align: left;
+  }
+
+  .app-thumbnail__content--right {
+    text-align: right;
+  }
+
   .app-thumbnail__content:last-child {
     margin-bottom: 0;
+  }
+
+  .app-thumbnail__image {
+    height: 300px;
   }
 
   .app-thumbnail__image--isolation-1 {
@@ -396,5 +439,31 @@ p {
   .app-thumbnail__image--isolation-2 {
     width: 300px;
     height: 300px;
+  }
+
+  .app-thumbnail__image--isolation-3 {
+    width: 400px;
+    height: 300px;
+  }
+
+  .app-thumbnail__image--isolation-4 {
+    width: 300px;
+    height: 200px;
+  }
+
+  .app-thumbnail__image--assainissement-1 {
+    height: 400px;
+  }
+
+  .app-thumbnail__image--assainissement-2,
+  .app-thumbnail__image--assainissement-3 {
+    width: 300px;
+    height: 275px;
+  }
+
+  .app-thumbnail__image--ventilation-1,
+  .app-thumbnail__image--ventilation-2 {
+    width: 350px;
+    height: 250px;
   }
 }

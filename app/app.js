@@ -29,7 +29,22 @@
                  */
                 $rootScope.title = $route.current.title;
                 $rootScope.description = $route.current.description;
+
+                closeDrawer();
             });
+
+            function closeDrawer() {
+                var drawer = angular.element('.mdl-layout__drawer');
+                if (!drawer || !drawer.hasClass('is-visible')) {
+                  return;
+                }
+
+                var layout = document.querySelector('.mdl-layout.is-small-screen').MaterialLayout;
+                if (!layout) {
+                  return;
+                }
+                layout.toggleDrawer();
+            }
         }
     ]).
 

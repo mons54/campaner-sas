@@ -23,8 +23,11 @@ a {
   color: #fff;
 }
 
+h1, h2 {
+  margin: 12px 0;
+}
+
 h1 {
-  text-align: center;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -40,9 +43,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul, ol, p {
+  color: #000;
   display: block;
   width: 100%;
   font-size: 15px;
+  text-align: justify;
 }
 
 .app__pull-left {
@@ -223,7 +228,65 @@ ul, ol, p {
   width: 100%;
 }
 
+.app-partner {
+  display: table;
+  width: 100%;
+}
+
+.app-partner__logo {
+  width: 100px;
+}
+
+.app-partner__logo--igloo {
+  width: 150px;
+}
+
+.app-partner__content {
+  display: table-cell;
+}
+
+.app-partner__content--left {
+  text-align: left;
+}
+
+.app-partner__content--right {
+  text-align: right;
+}
+
+.app-thumbnail {
+  margin-top: 25px;
+}
+
+.app-thumbnail__content {
+  margin-bottom: 25px;
+}
+
+.app-thumbnail__image {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+@media (min-width: 480px) {
+  .app-thumbnail {
+    margin-top: 0;
+  }
+
+  .app-thumbnail__content--left {
+    text-align: left;
+  }
+
+  .app-thumbnail__content--right {
+    text-align: right;
+  }
+}
+
 @media (min-width: 480px) and (max-width:839px) {
+
+  h1, h2 {
+    margin: 18px 0;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -235,9 +298,37 @@ ul, ol, p {
   ul, ol, p {
     font-size: 18px;
   }
+
+  .app-partner__content {
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+  }
+
+  .app-thumbnail__content {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-top: 4%;
+    margin-right: 9%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .app-thumbnail__content:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .app-thumbnail__image {
+    height: 225px;
+  }
 }
 
 @media (min-width: 840px) {
+
+  h1, h2 {
+    margin: 24px 0;
+  }
   
   h1 {
     font-size: 40px;
@@ -264,5 +355,44 @@ ul, ol, p {
   .app-home__team {
     float: right;
     width: 39%;
+  }
+
+  .app-partner__logo {
+    width: 150px;
+  }
+
+  .app-partner__logo--igloo {
+    width: 200px;
+  }
+
+  .app-thumbnail {
+    padding-left: 25px;
+    margin-top: 0;
+  }
+
+  .app-thumbnail--left {
+    text-align: left;
+  }
+
+  .app-thumbnail--right {
+    text-align: right;
+  }
+
+  .app-thumbnail__content {
+    margin-bottom: 50px;
+  }
+
+  .app-thumbnail__content:last-child {
+    margin-bottom: 0;
+  }
+
+  .app-thumbnail__image--isolation-1 {
+    width: 300px;
+    height: 250px;
+  }
+
+  .app-thumbnail__image--isolation-2 {
+    width: 300px;
+    height: 300px;
   }
 }

@@ -56,6 +56,14 @@ ul, ol {
   padding-left: 20px;
 }
 
+ul li {
+  padding-bottom: 5px;
+}
+
+ul li:last-child {
+  padding-bottom: 0;
+}
+
 .app__pull-left {
   float: left;
 }
@@ -247,8 +255,7 @@ ul, ol {
 }
 
 .app-partner__logo--technichem {
-  width: 250px;
-  margin-top: 10px;
+  width: 150px;
 }
 
 .app-partner__logo--eole {
@@ -274,6 +281,10 @@ ul, ol {
 
 .app-thumbnail__content {
   margin-bottom: 25px;
+}
+
+.app-thumbnail__content:nth-last-of-type(-n+1) {
+  margin-bottom: 0;
 }
 
 .app-thumbnail__image {
@@ -317,7 +328,7 @@ ul, ol {
   }
 
   .app-partner__logo--technichem {
-    width: 500px;
+    width: 300px;
   }
 
   .app-partner__logo--eole {
@@ -328,14 +339,19 @@ ul, ol {
     display: inline-block;
     vertical-align: top;
     width: 45%;
-    margin-top: 4%;
-    margin-right: 9%;
-    margin-left: 0;
+    margin-top: 0;
+    margin-right: 6%;
+    margin-left: 2%;
+    margin-bottom: 6%;
+  }
+
+  .app-thumbnail__content:nth-last-of-type(-n+2) {
     margin-bottom: 0;
   }
 
   .app-thumbnail__content:nth-child(even) {
     margin-right: 0;
+    margin-left: 0;
   }
 
   .app-thumbnail__image {
@@ -369,6 +385,10 @@ ul, ol {
     padding-left: 30px;
   }
 
+  ul li {
+      padding-bottom: 10px;
+    }
+
   .mdl-grid {
       padding: 8px 20px
   }
@@ -391,12 +411,12 @@ ul, ol {
   }
 
   .app-partner__logo--technichem {
-    width: 500px;
+    width: 300px;
   }
 
   .app-partner__logo--eole {
-    margin-top: 50px;
-    width: 300px;
+    margin-top: 40px;
+    width: 250px;
   }
 
   .app-thumbnail {
@@ -412,7 +432,7 @@ ul, ol {
   }
 
   .app-thumbnail__content {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .app-thumbnail__content--left {
@@ -452,7 +472,7 @@ ul, ol {
   }
 
   .app-thumbnail__image--assainissement-1 {
-    height: 400px;
+    height: 390px;
   }
 
   .app-thumbnail__image--assainissement-2,
@@ -465,5 +485,17 @@ ul, ol {
   .app-thumbnail__image--ventilation-2 {
     width: 350px;
     height: 250px;
+  }
+
+  .app-thumbnail__image--demoussage-1,
+  .app-thumbnail__image--demoussage-3 {
+    width: 250px;
+    height: 200px;
+  }
+
+  .app-thumbnail__image--demoussage-2,
+  .app-thumbnail__image--demoussage-4 {
+    width: 300px;
+    height: 200px;
   }
 }

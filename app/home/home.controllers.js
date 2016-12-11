@@ -13,6 +13,8 @@ controller('homeCtrl', ['$scope',
     
     function ($scope) {
 
-         
+        if (typeof FB !== 'undefined') {
+            FB.XFBML.parse();
+        }
     }
 ]);

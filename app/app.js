@@ -45,6 +45,10 @@
                 }
                 layout.toggleDrawer();
             }
+
+            angular.element(document).ready(function () {
+                $rootScope.ready = true;
+            });
         }
     ]).
 
@@ -80,7 +84,8 @@
             .when('/contact', {
                 title : "Contact",
                 description: "Conseils en amélioration et embellissement de l'habitat.",
-                templateUrl: '/app/contact/contact.html'
+                templateUrl: '/app/contact/contact.html',
+                controller: 'contactCtrl'
             })
             .when('/bilan', {
                 title : "bilan",

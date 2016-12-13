@@ -41,4 +41,33 @@ directive('showModal', ['modal',
             }
         };
     }
+]).
+
+/**
+ * @ngdoc directive
+ * @name components.directive:form
+ * @description 
+ * Validate form.
+ * @restrict E
+ */
+directive('form', [function () {
+        return {
+            restrict: 'E',
+            link: function (scope, element, attrs) {
+                element.find('.mdl-textfield').removeClass('is-invalid');
+                var formScope = scope[element.attr('name')];
+                element.on('submit', function () {
+                    if (formScope.$valid) {
+                        return;
+                    }
+                    element.find(':input').each(function (key, value) {
+                        if (formScope[$(value).attr('name')] && !formScope[$(value).attr('name')].$valid) {
+                            $(value).closest('.mdl-textfield').addClass('is-invalid');
+                            return false;
+                        }
+                    })
+                });
+            }
+        };
+    }
 ]);

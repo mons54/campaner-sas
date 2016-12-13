@@ -1,25 +1,77 @@
 <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-    <!--<div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-        <form>
-            <div class="app-form__textfield">
-                <input type="text" name="name" placeholder="Nom">
+    <h1>Contactez-nous</h1>
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+        <div ng-show="success">
+            <p class="app__success"><strong>Votre message a bien été envoyé.</strong></p>
+            <p>Nous vous répondrons dans les plus brefs délais.</p>
+        </div>
+        <div ng-show="error">
+            <p class="app__warning"><strong>Une erreur est survenue.</strong></p>
+            <p>Merci de réessayer ultérieurement ou de nous contacter directement par mail.</p>
+        </div>
+        <form ng-show="!success && !error"
+              class="form form-validate" 
+              ng-submit="submit()" 
+              name="contactForm" 
+              novalidate="novalidate">
+            <div class="app-loader" ng-class="{'app-loader--hide': !loading }">
+                <div class="mdl-spinner mdl-js-spinner is-active"></div>
             </div>
-            <div class="app-form__textfield">
-                <input type="text" name="email" placeholder="Email">
+            <div class="app-textfield mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" 
+                       type="text" 
+                       pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+                       name="name"
+                       ng-model="formData.name"
+                       required>
+                <label class="app-textfield__label mdl-textfield__label">Nom</label>
+                <span class="app-textfield__error mdl-textfield__error">Veuillez saisir un nom valide.</span>
             </div>
-            <div class="app-form__textfield">
-                <input type="text" name="phone" placeholder="Téléphone">
+            <div class="app-textfield mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" 
+                       type="email"
+                       name="email"
+                       ng-model="formData.email" 
+                       required>
+                <label class="app-textfield__label mdl-textfield__label">Email</label>
+                <span class="app-textfield__error mdl-textfield__error">Veuillez saisir un email valide.</span>
             </div>
-            <div class="app-form__textfield">
-                <input type="text" name="object" placeholder="Objet">
+            <div class="app-textfield mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" 
+                       type="text" 
+                       pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+                       name="phone"
+                       ng-model="formData.phone" 
+                       required>
+                <label class="app-textfield__label mdl-textfield__label">Téléphone</label>
+                <span class="app-textfield__error mdl-textfield__error">Veuillez saisir un numéro valide.</span>
             </div>
-            <div class="app-form__textfield">
-                <textarea rows="8" name="content"></textarea>
+            <div class="app-textfield mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" 
+                       type="text" 
+                       pattern="^.+$"
+                       name="object"
+                       ng-model="formData.object" 
+                       required>
+                <label class="app-textfield__label mdl-textfield__label">Objet</label>
+                <span class="app-textfield__error mdl-textfield__error">Veuillez saisir un objet.</span>
             </div>
+            <div class="app-textfield mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" 
+                          type="text"
+                          minlength="3" 
+                          rows="8"
+                          name="message"
+                          ng-model="formData.message" 
+                          required>
+                </textarea>
+                <label class="app-textfield__label mdl-textfield__label">Votre message...</label>
+                <span class="app-textfield__error mdl-textfield__error">Votre message est trop court.</span>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">Envoyer mon message</button>
         </form>
     </div>
     <div class="app-contact__infos mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
         <ng-include src="'app/contact.html'"></ng-include>
-    </div>-->
-    <ng-include src="'app/contact.html'"></ng-include>
+    </div>
 </div>

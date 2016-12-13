@@ -45,10 +45,6 @@
                 }
                 layout.toggleDrawer();
             }
-
-            angular.element(document).ready(function () {
-                $rootScope.ready = true;
-            });
         }
     ]).
 

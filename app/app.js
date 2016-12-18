@@ -55,7 +55,7 @@
             .when('/', {
                 shortTitle: "Accueil",
                 title : "Campaner SAS - Isolation, ventilation, couverture, façade",
-                description: "Campaner SAS est une entreprise spécialisée dans le conseil et l'accompagnement des projets d'isolation, de ventilation, de converture et de façade à Toul et en Lorraine.",
+                description: "Campaner SAS est une entreprise spécialisée dans le conseil et l'accompagnement des projets d'isolation, de ventilation, de couverture et de façade à Toul et en Lorraine.",
                 templateUrl: '/app/home/home.html',
                 controller: 'homeCtrl'
             })
@@ -106,7 +106,6 @@
 
 })();
 
-
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -114,3 +113,11 @@
   js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-89130458-1', 'auto');
+ga('send', 'pageview');

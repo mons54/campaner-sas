@@ -142,6 +142,10 @@ form {
   line-height: 26px;
 }
 
+.app-layout__content {
+  background-color: rgba(170, 170, 170, 1);
+}
+
 .app-header .mdl-menu__container {
   z-index: 50;
   margin: 0 !important;
@@ -157,6 +161,7 @@ form {
 }
 
 .app-header {
+  color: #fff;
   overflow: visible;
   background-color: white;
 }
@@ -181,6 +186,7 @@ form {
 }
 
 .app-header__row .app-title {
+  color: #4c77bb;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;

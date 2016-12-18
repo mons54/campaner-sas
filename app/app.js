@@ -54,7 +54,7 @@
             $routeProvider
             .when('/', {
                 shortTitle: "Accueil",
-                title : "Campaner SAS - Isolation, ventilation, converture, façade",
+                title : "Campaner SAS - Isolation, ventilation, couverture, façade",
                 description: "Campaner SAS est une entreprise spécialisée dans le conseil et l'accompagnement des projets d'isolation, de ventilation, de converture et de façade à Toul et en Lorraine.",
                 templateUrl: '/app/home/home.html',
                 controller: 'homeCtrl'

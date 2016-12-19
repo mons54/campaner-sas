@@ -142,6 +142,10 @@ form {
   line-height: 26px;
 }
 
+.app-layout__content {
+  background-color: rgba(170, 170, 170, 1);
+}
+
 .app-header .mdl-menu__container {
   z-index: 50;
   margin: 0 !important;
@@ -157,6 +161,7 @@ form {
 }
 
 .app-header {
+  color: #fff;
   overflow: visible;
   background-color: white;
 }
@@ -181,7 +186,8 @@ form {
 }
 
 .app-header__row .app-title {
-  font-size: 18px;
+  color: #4c77bb;
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -336,6 +342,11 @@ form {
   border-radius: 20px;
 }
 
+.app-video__ventilation {
+  max-width: 100%;
+  height: auto;
+}
+
 .app-textfield {
   width: 100%;
 }
@@ -350,6 +361,11 @@ form {
 }
 
 @media (min-width: 480px) {
+
+  .app-header__row .app-title {
+    font-size: 18px;
+  }
+
   .app-thumbnail {
     margin-top: 0;
   }

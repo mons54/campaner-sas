@@ -9,7 +9,7 @@ angular.module('app').
  * The contact controller.
  * @requires $scope
  */
-controller('contactCtrl', ['$scope', '$http',
+controller('bilanCtrl', ['$scope', '$http',
     
     function ($scope, $http) {
 
@@ -18,11 +18,11 @@ controller('contactCtrl', ['$scope', '$http',
         }
 
         $scope.formData = {
-            contact: true
+            bilan: true
         };
 
         $scope.submit = function () {
-            if (!$scope.contactForm.$valid) {
+            if (!$scope.bilanForm.$valid) {
                 return;
             }
             $scope.loading = true;

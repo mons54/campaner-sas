@@ -393,11 +393,12 @@ form {
     font-size: 18px;
   }
 
-  .app-home__team {
+  .app-home__team img {
     max-height: 300px;
   }
 
-  .app-partner__content {
+  .app-partner__content--left,
+  .app-partner__content--right {
     display: table-cell;
     width: 50%;
     text-align: center;
@@ -408,8 +409,9 @@ form {
   }
 
   .app-partner__logo--eole {
-    width: 300px;
-  }
+    width: 250px;
+    margin: 10px 0 20px 0;
+}
 
   .app-thumbnail__content {
     display: inline-block;

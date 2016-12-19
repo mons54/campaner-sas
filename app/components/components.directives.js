@@ -54,7 +54,7 @@ directive('form', [function () {
         return {
             restrict: 'E',
             link: function (scope, element, attrs) {
-                element.find('.mdl-textfield').removeClass('is-invalid');
+                element.find('.mdl-textfield').removeClass('is-invalid is-dirty');
                 var formScope = scope[element.attr('name')];
                 element.on('submit', function () {
                     if (formScope.$valid) {
@@ -62,7 +62,9 @@ directive('form', [function () {
                     }
                     element.find(':input').each(function (key, value) {
                         if (formScope[$(value).attr('name')] && !formScope[$(value).attr('name')].$valid) {
-                            $(value).closest('.mdl-textfield').addClass('is-invalid');
+                            var textfield = $(value).closest('.mdl-textfield');
+                            textfield.addClass('is-invalid');
+                            $('main').animate({scrollTop: textfield.position().top}, 'slow');
                             return false;
                         }
                     })

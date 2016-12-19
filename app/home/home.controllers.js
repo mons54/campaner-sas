@@ -14,7 +14,9 @@ controller('homeCtrl', ['$scope',
     function ($scope) {
 
         if (typeof FB !== 'undefined') {
-            FB.XFBML.parse();
+            try {
+                FB.XFBML.parse();
+            } catch (ex) {}
         }
     }
 ]);

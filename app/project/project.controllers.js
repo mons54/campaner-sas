@@ -4,12 +4,12 @@ angular.module('app').
 
 /**
  * @ngdoc controller
- * @name contact.controller:homeCtrl
+ * @name contact.controller:projectCtrl
  * @description 
  * The contact controller.
  * @requires $scope
  */
-controller('bilanCtrl', ['$scope', '$http',
+controller('projectCtrl', ['$scope', '$http',
     
     function ($scope, $http) {
 
@@ -18,11 +18,11 @@ controller('bilanCtrl', ['$scope', '$http',
         }
 
         $scope.formData = {
-            bilan: true
+            project: true
         };
 
         $scope.submit = function () {
-            if (!$scope.bilanForm.$valid) {
+            if (!$scope.projectForm.$valid) {
                 return;
             }
             $scope.loading = true;

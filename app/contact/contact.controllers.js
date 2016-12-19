@@ -4,7 +4,7 @@ angular.module('app').
 
 /**
  * @ngdoc controller
- * @name contact.controller:homeCtrl
+ * @name contact.controller:contactCtrl
  * @description 
  * The contact controller.
  * @requires $scope

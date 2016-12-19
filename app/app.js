@@ -90,12 +90,12 @@
                 templateUrl: '/app/contact/contact.html',
                 controller: 'contactCtrl'
             })
-            .when('/bilan', {
+            .when('/etude-bilan', {
                 navTitle: "Demande d'étude et de bilan gratuits",
                 title : "Demande d'étude et de bilan gratuits",
                 description: "Bénéficiez d'une étude et d'un bilan gratuit sur les performances énergétiques, l'état de votre converture et de l'air ambiant de votre maison.",
-                templateUrl: '/app/bilan/bilan.html',
-                controller: 'bilanCtrl'
+                templateUrl: '/app/project/project.html',
+                controller: 'projectCtrl'
             })
             .otherwise({
                 redirectTo: '/'

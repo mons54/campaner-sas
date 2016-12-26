@@ -1,14 +1,22 @@
 <!doctype html>
 <html lang="fr" ng-app="app">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="{{ description }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
         <base href="/">
-        
-        <title ng-bind="title"></title>
+
+        <title ng-bind="data.meta.title"></title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="{{data.meta.description}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="fragment" content="!">
+
+        <meta name="twitter:title" content="{{data.meta.title}}">
+        <meta name="twitter:description" content="{{data.meta.description}}" />
+
+        <meta property="og:title" content="{{data.meta.title}}" />
+        <meta property="og:description" content="{{data.meta.description}}" />
         
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -23,7 +31,7 @@
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
             <header class="app-header mdl-layout__header">
                 <div class="app-header__row mdl-layout__header-row">
-                    <span class="app-title mdl-layout-title" ng-bind="navTitle"></span>
+                    <span class="app-title mdl-layout-title" ng-bind="data.title"></span>
                 </div>
             </header>
 

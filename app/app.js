@@ -27,9 +27,7 @@
                 /**
                  * Set the meta tags
                  */
-                $rootScope.navTitle = $route.current.navTitle;
-                $rootScope.title = $route.current.title;
-                $rootScope.description = $route.current.description;
+                $rootScope.data = $route.current.data;
 
                 closeDrawer();
             });
@@ -53,49 +51,77 @@
         function ($routeProvider, $locationProvider) {
             $routeProvider
             .when('/', {
-                navTitle: "Accueil",
-                title : "Campaner SAS - Isolation, ventilation, couverture, façade",
-                description: "Campaner SAS est une entreprise spécialisée dans le conseil et l'accompagnement des projets d'isolation, de ventilation, de couverture et de façade à Toul et en Lorraine.",
                 templateUrl: '/app/home/home.html',
-                controller: 'homeCtrl'
+                controller: 'homeCtrl',
+                data: {
+                    title: "Accueil",
+                    meta: {
+                        title: "Campaner SAS - Isolation - Ventilation - Couverture - Façade",
+                        description: "Campaner SAS est une entreprise spécialisée dans le conseil et l'accompagnement des projets d'isolation, de ventilation, de couverture et de façade à Toul et en Lorraine."
+                    }
+                }
             })
             .when('/isolation', {
-                navTitle: "Isolation de combles perdus et aménagés",
-                title : "Isolation de combles perdus et aménagés",
-                description: "Campaner SAS entreprise spécialisée en isoltaion de combles perdus et aménagés.",
-                templateUrl: '/app/isolation/isolation.html'
+                templateUrl: '/app/isolation/isolation.html',
+                data: {
+                    title: "Isolation de combles perdus et aménagés",
+                    meta: {
+                        title: "Campaner SAS - Isolation de combles perdus et aménagés",
+                        description: "Campaner SAS entreprise spécialisée en isoltaion de combles perdus et aménagés."
+                    }
+                }
             })
             .when('/assainissement', {
-                navTitle: "Assainissement et ventilation",
-                title : "Assainissement et ventilation",
-                description: "Campaner SAS entreprise spécialisée en assainissement et ventilation.",
-                templateUrl: '/app/assainissement/assainissement.html'
+                templateUrl: '/app/assainissement/assainissement.html',
+                data: {
+                    title: "Assainissement et ventilation",
+                    meta: {
+                        title: "Campaner SAS - Assainissement et ventilation",
+                        description: "Campaner SAS entreprise spécialisée en assainissement et ventilation."
+                    }
+                }
             })
             .when('/demoussage', {
-                navTitle: "Démoussage et hydrofugation de toiture",
-                title : "Démoussage et entretien de converture",
-                description: "Campaner SAS entreprise spécialisée en démoussage et entretien de converture.",
-                templateUrl: '/app/demoussage/demoussage.html'
+                templateUrl: '/app/demoussage/demoussage.html',
+                data: {
+                    title: "Démoussage et hydrofugation de toiture",
+                    meta: {
+                        title: "Campaner SAS - Démoussage et entretien de converture",
+                        description: "Campaner SAS entreprise spécialisée en démoussage et entretien de converture."
+                    }
+                }
             })
             .when('/facades', {
-                navTitle: "Façades",
-                title : "Façades, peinture et crépis",
-                description: "Campaner SAS entreprise spécialisée en façades, peinture et crépis.",
-                templateUrl: '/app/facades/facades.html'
+                templateUrl: '/app/facades/facades.html',
+                data: {
+                    title: "Façades",
+                    meta: {
+                        title: "Campaner SAS - Façades, peinture et crépis",
+                        description: "Campaner SAS entreprise spécialisée en façades, peinture et crépis."
+                    }
+                }
             })
             .when('/contact', {
-                navTitle: "Contactez-nous",
-                title : "Contactez-nous",
-                description: "Contactez-nous afin de pouvoir vous conseiller au plus près de vos réels besoins.",
                 templateUrl: '/app/contact/contact.html',
-                controller: 'contactCtrl'
+                controller: 'contactCtrl',
+                data: {
+                    title: "Contact",
+                    meta: {
+                        title: "Campaner SAS - Contactez-nous",
+                        description: "Contactez-nous afin de pouvoir vous conseiller au plus près de vos réels besoins."
+                    }
+                }
             })
             .when('/etude-bilan', {
-                navTitle: "Demande d'étude et de bilan gratuits",
-                title : "Demande d'étude et de bilan gratuits",
-                description: "Bénéficiez d'une étude et d'un bilan gratuit sur les performances énergétiques, l'état de votre converture et de l'air ambiant de votre maison.",
                 templateUrl: '/app/project/project.html',
-                controller: 'projectCtrl'
+                controller: 'projectCtrl',
+                data: {
+                    title: "Demande d'étude et de bilan gratuits",
+                    meta: {
+                        title: "Campaner SAS - Demande d'étude et de bilan gratuits",
+                        description: "Bénéficiez d'une étude et d'un bilan gratuit sur les performances énergétiques, l'état de votre converture et de l'air ambiant de votre maison."
+                    }
+                }
             })
             .otherwise({
                 redirectTo: '/'

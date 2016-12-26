@@ -66,7 +66,7 @@
                 data: {
                     title: "Isolation de combles perdus et aménagés",
                     meta: {
-                        title: "Campaner SAS - Isolation de combles perdus et aménagés",
+                        title: "Isolation de combles perdus et aménagés - Campaner SAS",
                         description: "Campaner SAS entreprise spécialisée en isoltaion de combles perdus et aménagés."
                     }
                 }
@@ -76,7 +76,7 @@
                 data: {
                     title: "Assainissement et ventilation",
                     meta: {
-                        title: "Campaner SAS - Assainissement et ventilation",
+                        title: "Assainissement et ventilation - Campaner SAS",
                         description: "Campaner SAS entreprise spécialisée en assainissement et ventilation."
                     }
                 }
@@ -86,7 +86,7 @@
                 data: {
                     title: "Démoussage et hydrofugation de toiture",
                     meta: {
-                        title: "Campaner SAS - Démoussage et entretien de converture",
+                        title: "Démoussage et entretien de converture - Campaner SAS",
                         description: "Campaner SAS entreprise spécialisée en démoussage et entretien de converture."
                     }
                 }
@@ -96,7 +96,7 @@
                 data: {
                     title: "Façades",
                     meta: {
-                        title: "Campaner SAS - Façades, peinture et crépis",
+                        title: "Façades, peinture et crépis - Campaner SAS",
                         description: "Campaner SAS entreprise spécialisée en façades, peinture et crépis."
                     }
                 }
@@ -107,7 +107,7 @@
                 data: {
                     title: "Contact",
                     meta: {
-                        title: "Campaner SAS - Contactez-nous",
+                        title: "Contactez-nous - Campaner SAS",
                         description: "Contactez-nous afin de pouvoir vous conseiller au plus près de vos réels besoins."
                     }
                 }
@@ -118,7 +118,7 @@
                 data: {
                     title: "Demande d'étude et de bilan gratuits",
                     meta: {
-                        title: "Campaner SAS - Demande d'étude et de bilan gratuits",
+                        title: "Demande d'étude et de bilan gratuits - Campaner SAS",
                         description: "Bénéficiez d'une étude et d'un bilan gratuit sur les performances énergétiques, l'état de votre converture et de l'air ambiant de votre maison."
                     }
                 }
